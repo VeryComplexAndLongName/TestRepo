@@ -1,0 +1,16 @@
+name: check
+on: [push, pull_request]
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail when the marker file says so
+        run: |
+          if [ -f SHOULD_FAIL ]; then
+            echo "marker present - failing deliberately"
+            exit 1
+          fi
+          echo "ok"
