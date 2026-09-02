@@ -1,0 +1,9 @@
+{
+  "autonomyLevel": "autonomous",
+  "reviewGate": { "mode": "agent-sufficient" },
+  "stepAgents": { "verify": "claude-cli" },
+  "gitStageAllowlist": {
+    "remotes": ["origin"],
+    "branches": ["main", "smoke/*"]
+  }
+}
