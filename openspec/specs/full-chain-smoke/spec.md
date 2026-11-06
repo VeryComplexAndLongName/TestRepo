@@ -1,4 +1,9 @@
-## ADDED Requirements
+# full-chain-smoke Specification
+
+## Purpose
+The repository SHALL retain a record of the successful full-chain smoke run.
+
+## Requirements
 
 ### Requirement: Full-chain smoke record
 The repository SHALL retain a record of the successful full-chain smoke run.
